@@ -41,6 +41,9 @@ public class StudentLoginActivity extends Activity {
 					if (student != null) {
 						editor.putString("id", student.getSno());
 						 editor.commit();
+						 
+						 etUserName.setText("");
+						 etPassword.setText("");
 						Intent intent = new Intent(StudentLoginActivity.this, StudentScreenActivity.class);
 						startActivity(intent);
 					} else {

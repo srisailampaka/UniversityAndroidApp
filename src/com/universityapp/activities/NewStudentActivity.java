@@ -62,7 +62,9 @@ public class NewStudentActivity extends Activity {
 				// TODO Auto-generated method stub
 				(new DatabaseHelper(getApplicationContext())).createStudentegistraton(student);
 				Intent intent = new Intent(NewStudentActivity.this, StudentLoginActivity.class);
+			
 				startActivity(intent);
+				
 			}
 		});
 

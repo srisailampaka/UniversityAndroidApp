@@ -41,6 +41,8 @@ public class ProffesorLoginActivtity extends Activity {
 					if (professor != null) {
 						Intent intent = new Intent(ProffesorLoginActivtity.this, ProffesorScreenActivity.class);
 						startActivity(intent);
+						etUserName.setText("");
+						etPassword.setText("");
 					} else {
 						Toast.makeText(getApplicationContext(), "plese check the login Details", Toast.LENGTH_LONG)
 								.show();

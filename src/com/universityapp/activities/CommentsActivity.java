@@ -42,6 +42,7 @@ public class CommentsActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Toast.makeText(getApplicationContext(), "Commnets added successfully ", Toast.LENGTH_LONG).show();
+				etComment.setText("");
 			}
 		});
 
